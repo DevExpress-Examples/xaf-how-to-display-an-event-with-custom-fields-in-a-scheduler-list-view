@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<Application Title="ExtendedEvents">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <NavigationItems StartupNavigationItem="ExtendedEvent_ListView">
+		<Items>
+			<Item Id="Default">
+				<Items>
+					<Item Id="Event_ListView" Removed="True" />
+				</Items>
+			</Item>
+		</Items>
+  </NavigationItems>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+  </Views>
+</Application>
