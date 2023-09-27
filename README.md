@@ -1,25 +1,29 @@
-# Product/Platform - Task
+# XAF - How to Extend an Event With Custom Fields and Display Them in Scheduler
 
-This is the repository template for creating new examples. Describe the solved task here.
+This example demonstrates how to display events with custom fields in a Scheduler List View.
 
-Put a screenshot that illustrates the result here.
+**ASP.NET Core Blazor**  
+![|](xaf-blazor-extended-event-with-custom-fields-devexpress.png)
 
-Then, add implementation details (steps, code snippets, and other technical information in a free form), or add a link to an existing document with implementation details. 
+**Windows Forms**  
+![](xaf-winforms-extended-event-with-custom-fields-devexpress.png)
+
+1. Inherit from the `Event` class and implement new properties. For details, see the following file: [ExtendedEvent.cs](./CS/EFCore/ExtendedEvents.Module/BusinessObjects/ExtendedEvent.cs).
+2. Map the new properties to the appropriate data fields. For details, see the following files:
+   - [SchedulerCustomFieldMappingsController.cs](./CS/EFCore/ExtendedEvents.Blazor.Server/Controllers/SchedulerCustomFieldMappingsController.cs) (ASP.NET Core Blazor)
+   - [SchedulerCustomFieldMappingsController.cs](./CS/EFCore/ExtendedEvents.Win/Controllers/SchedulerCustomFieldMappingsController.cs) (Windows Forms)
+3. Use the properties in the appointment card.
+
+   In an XAF ASP.NET Core Blazor application:
+   - Create a Razor component. For implementation details, refer to the following file: [CustomAppointmentTemplate.razor](./CS/EFCore/ExtendedEvents.Blazor.Server/CustomAppointmentTemplate.razor).
+   - Set up VerticalAppointmentTemplate and HorizontalAppointmentTemplate properties of Scheduler View. For implementation details, refer to the following file: [SchedulerCustomFieldMappingsController.cs](./CS/EFCore/ExtendedEvents.Blazor.Server/Controllers/SchedulerCustomFieldMappingsController.cs).
+
+   In an XAF Windows Forms application:
+   - Handle the InitAppointmentDisplayText event. For implementation details, refer to the following file: [SchedulerCustomFieldMappingsController.cs](./CS/EFCore/ExtendedEvents.Win/Controllers/SchedulerCustomFieldMappingsController.cs).
 
 ## Files to Review
 
-- link.cs (VB: link.vb)
-- link.js
-- ...
-
-## Documentation
-
-- link
-- link
-- ...
-
-## More Examples
-
-- link
-- link
-- ...
+- [ExtendedEvent.cs](./CS/EFCore/ExtendedEvents.Module/BusinessObjects/ExtendedEvent.cs)
+- [CustomAppointmentTemplate.razor](./CS/EFCore/ExtendedEvents.Blazor.Server/CustomAppointmentTemplate.razor)
+- [SchedulerCustomFieldMappingsController.cs](./CS/EFCore/ExtendedEvents.Blazor.Server/Controllers/SchedulerCustomFieldMappingsController.cs) (ASP.NET Core Blazor)
+- [SchedulerCustomFieldMappingsController.cs](./CS/EFCore/ExtendedEvents.Win/Controllers/SchedulerCustomFieldMappingsController.cs) (Windows Forms)
