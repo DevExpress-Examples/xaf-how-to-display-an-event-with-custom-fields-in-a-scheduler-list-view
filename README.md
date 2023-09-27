@@ -23,10 +23,10 @@ This example demonstrates how to extend an event with custom fields and display 
 
    In an XAF ASP.NET Core Blazor application:
    - Create a Razor component. For implementation details, refer to the following file: [CustomAppointmentTemplate.razor](./CS/EFCore/ExtendedEvents.Blazor.Server/CustomAppointmentTemplate.razor).
-   - Set up VerticalAppointmentTemplate and HorizontalAppointmentTemplate properties of Scheduler View. For implementation details, refer to the following file: [SchedulerCustomFieldMappingsController.cs](./CS/EFCore/ExtendedEvents.Blazor.Server/Controllers/SchedulerCustomFieldMappingsController.cs).
+   - Specify the `VerticalAppointmentTemplate` and `HorizontalAppointmentTemplate` properties of Scheduler View. For implementation details, refer to the following file: [SchedulerCustomFieldMappingsController.cs](./CS/EFCore/ExtendedEvents.Blazor.Server/Controllers/SchedulerCustomFieldMappingsController.cs).
 
    In an XAF Windows Forms application:
-   - Handle the InitAppointmentDisplayText event. For implementation details, refer to the following file: [SchedulerCustomFieldMappingsController.cs](./CS/EFCore/ExtendedEvents.Win/Controllers/SchedulerCustomFieldMappingsController.cs).
+   - Handle the `InitAppointmentDisplayText` event. For implementation details, refer to the following file: [SchedulerCustomFieldMappingsController.cs](./CS/EFCore/ExtendedEvents.Win/Controllers/SchedulerCustomFieldMappingsController.cs).
 
 ## Files to Review
 
