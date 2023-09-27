@@ -3,9 +3,11 @@
 This example demonstrates how to extend an event with custom fields and display them in Scheduler.
 
 **ASP.NET Core Blazor**  
+
 ![|](xaf-blazor-extended-event-with-custom-fields-devexpress.png)
 
 **Windows Forms**  
+
 ![](xaf-winforms-extended-event-with-custom-fields-devexpress.png)
 
 1. Inherit from the `Event` class and implement new properties. For details, see the following file: [ExtendedEvent.cs](./CS/EFCore/ExtendedEvents.Module/BusinessObjects/ExtendedEvent.cs).
@@ -24,6 +26,6 @@ This example demonstrates how to extend an event with custom fields and display 
 ## Files to Review
 
 - [ExtendedEvent.cs](./CS/EFCore/ExtendedEvents.Module/BusinessObjects/ExtendedEvent.cs)
-- [CustomAppointmentTemplate.razor](./CS/EFCore/ExtendedEvents.Blazor.Server/CustomAppointmentTemplate.razor)
+- [CustomAppointmentTemplate.razor](./CS/EFCore/ExtendedEvents.Blazor.Server/CustomAppointmentTemplate.razor) (ASP.NET Core Blazor)
 - [SchedulerCustomFieldMappingsController.cs](./CS/EFCore/ExtendedEvents.Blazor.Server/Controllers/SchedulerCustomFieldMappingsController.cs) (ASP.NET Core Blazor)
 - [SchedulerCustomFieldMappingsController.cs](./CS/EFCore/ExtendedEvents.Win/Controllers/SchedulerCustomFieldMappingsController.cs) (Windows Forms)
