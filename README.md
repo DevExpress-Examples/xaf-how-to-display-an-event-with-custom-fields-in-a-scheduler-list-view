@@ -1,6 +1,6 @@
-# XAF - How to Extend an Event With Custom Fields and Display Them in Scheduler
+# XAF - How to Display an Event with Custom Fields in a Scheduler List View
 
-This example demonstrates how to display events with custom fields in a Scheduler List View.
+This example demonstrates how to extend an event with custom fields and display them in Scheduler.
 
 **ASP.NET Core Blazor**  
 ![|](xaf-blazor-extended-event-with-custom-fields-devexpress.png)
