@@ -12,7 +12,7 @@ This example demonstrates how to extend an event with custom fields and display 
 2. Map the new properties to the appropriate data fields. For details, see the following files:
    - [SchedulerCustomFieldMappingsController.cs](./CS/EFCore/ExtendedEvents.Blazor.Server/Controllers/SchedulerCustomFieldMappingsController.cs) (ASP.NET Core Blazor)
    - [SchedulerCustomFieldMappingsController.cs](./CS/EFCore/ExtendedEvents.Win/Controllers/SchedulerCustomFieldMappingsController.cs) (Windows Forms)
-3. Use the properties in the appointment card.
+3. Display the fields in the event card in Scheduler List View.
 
    In an XAF ASP.NET Core Blazor application:
    - Create a Razor component. For implementation details, refer to the following file: [CustomAppointmentTemplate.razor](./CS/EFCore/ExtendedEvents.Blazor.Server/CustomAppointmentTemplate.razor).
