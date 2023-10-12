@@ -9,7 +9,7 @@ public class SchedulerCustomFieldMappingsController : ObjectViewController<ListV
 
     protected override void OnViewControlsCreated() {
         base.OnViewControlsCreated();
-        if (View.Editor is SchedulerListEditor listEditor && listEditor != null ) {
+        if (View.Editor is SchedulerListEditor listEditor) {
             listEditor.SchedulerControl.Storage.Appointments.CustomFieldMappings.AddRange(new[] {
             new AppointmentCustomFieldMapping("SimpleField", nameof(ExtendedEvent.CustomSimpleTypeField)),
             new AppointmentCustomFieldMapping("ReferenceField", nameof(ExtendedEvent.CustomReferenceTypeField))
