@@ -8,17 +8,6 @@ public class SchedulerCustomFieldMappingsController : ObjectViewController<ListV
     protected override void OnViewControlsCreated() {
         base.OnViewControlsCreated();
         var schedulerAdapter = ((SchedulerListEditor)View.Editor).GetSchedulerAdapter();
-        schedulerAdapter.SchedulerModel.DataStorage.AppointmentMappings.CustomFieldMappings = new[] {
-            new DxSchedulerCustomFieldMapping {
-                Name = "SimpleField",
-                Mapping = nameof(ExtendedEvent.CustomSimpleTypeField)
-            },
-            new DxSchedulerCustomFieldMapping {
-                Name = "ReferenceField",
-                Mapping = $"{nameof(ExtendedEvent.CustomReferenceTypeField)}.{nameof(CustomReferenceTypeField.Name)}"
-            }
-        };
-
         schedulerAdapter.DayViewModel.VerticalAppointmentTemplate = CustomAppointmentTemplate.Create();
         schedulerAdapter.DayViewModel.HorizontalAppointmentTemplate = CustomAppointmentTemplate.Create();
     }
