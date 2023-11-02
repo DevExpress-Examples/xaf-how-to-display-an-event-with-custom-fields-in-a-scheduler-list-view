@@ -18,7 +18,7 @@ This example demonstrates how to extend Scheduler events with custom fields and 
 1. Inherit from the `Event` class and implement new properties. For details, see the following file: [ExtendedEvent.cs](./CS/EFCore/ExtendedEvents.Module/BusinessObjects/ExtendedEvent.cs).
 2. Map new properties to appropriate data fields.  
    
-   In an ASP.NET Core Blazor application, create a `SchedulerListEditor` descendant and specify `CustomFieldMappings`. For details, see the following file: [SchedulerCustomFieldMappingsController.cs](./CS/EFCore/ExtendedEvents.Blazor.Server/Controllers/SchedulerCustomFieldMappingsController.cs).  
+   In an ASP.NET Core Blazor application, access `CustomFieldMappings` in the `AddScheduler()` method. For details, see the following file: [Startup.cs](./CS/EFCore/ExtendedEvents.Blazor.Server/Startup.cs).  
 
    In a Windows Forms application, specify `CustomFieldMappings`. For details, see the following file: [SchedulerCustomFieldMappingsController.cs](./CS/EFCore/ExtendedEvents.Win/Controllers/SchedulerCustomFieldMappingsController.cs).
 4. Display field values in event cards of a Scheduler List View.
