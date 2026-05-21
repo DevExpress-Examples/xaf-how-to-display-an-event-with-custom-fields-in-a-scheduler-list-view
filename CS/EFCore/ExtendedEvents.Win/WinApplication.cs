@@ -21,7 +21,6 @@ public class ExtendedEventsWindowsFormsApplication : WinApplication {
 		SplashScreen = new DXSplashScreen(typeof(XafSplashScreen), new DefaultOverlayFormOptions());
         ApplicationName = "ExtendedEvents";
         CheckCompatibilityType = DevExpress.ExpressApp.CheckCompatibilityType.DatabaseSchema;
-        UseOldTemplates = false;
         DatabaseVersionMismatch += ExtendedEventsWindowsFormsApplication_DatabaseVersionMismatch;
         CustomizeLanguagesList += ExtendedEventsWindowsFormsApplication_CustomizeLanguagesList;
         LastLogonParametersRead += (s, e) => {
